@@ -41,3 +41,124 @@ Secara default, di windows akan muncul mongoDB Atlas dan mongoDB Compass. Untuk 
    - Pada tampilan awal, Anda akan melihat opsi "Connect" atau "Connect to Host". Klik opsi tersebut.
    - MongoDB Compass akan mencoba terhubung ke server MongoDB secara otomatis. Jika tidak berhasil, Anda dapat mengklik opsi "Fill in connection fields individually" dan memasukkan detail koneksi secara manual.
    - Setelah terhubung, Anda akan dapat melihat dan mengelola database dan koleksi dalam antarmuka MongoDB Compass.
+
+## Perintah Dasar MongoDB
+
+Berikut adalah beberapa perintah dasar MongoDB yang sering digunakan:
+
+1. Menampilkan daftar database:
+
+   ```
+   show dbs
+   ```
+
+   Menampilkan daftar database yang tersedia.
+
+2. Menggunakan database:
+
+   ```
+   use nama_database
+   ```
+
+   Menggunakan atau beralih ke database dengan nama yang ditentukan. Jika database belum ada, MongoDB akan membuatnya secara otomatis saat Anda memulai menulis data ke database tersebut. Contohnya `use toko_roti`
+
+3. Menghapus database :
+
+   ```
+   db.dropDatabase()
+   ```
+
+   Menghapus database yang sedang digunakan.
+
+4. Membuat koleksi:
+
+   ```
+   db.createCollection(nama_koleksi)
+   ```
+
+   Membuat koleksi baru dengan nama yang ditentukan dalam database yang sedang digunakan.
+
+5. Menampilkan daftar koleksi dalam database:
+
+   ```
+   show collections
+   ```
+
+   Menampilkan daftar koleksi yang ada dalam database yang sedang digunakan.
+
+6. Mengubah nama koleksi:
+
+   ```
+   db.koleksi_asal.renameCollection(nama_koleksi_baru)
+   ```
+
+   Mengubah nama koleksi dari koleksi_asal menjadi nama_koleksi_baru dalam database yang sedang digunakan.
+
+7. Menghapus koleksi:
+   ```
+   db.nama_koleksi.drop()
+   ```
+   Menghapus koleksi dengan nama yang ditentukan dari database yang sedang digunakan.
+8. Menampilkan dokument dalam koleksi:
+
+   ```
+   db.nama_koleksi.find()
+   ```
+
+   Menampilkan semua dokument dalam koleksi dengan nama yang ditentukan.
+
+9. Menambahkan dokument ke koleksi:
+
+   ```
+   db.nama_koleksi.insertOne(dokument)
+   ```
+
+   Menambahkan satu dokument ke koleksi dengan nama yang ditentukan.
+
+   ```
+   db.nama_koleksi.insertMany(dokumen)
+   ```
+
+   Menambahkan beberapa dokument sekaligus ke koleksi dengan nama yang ditentukan.
+
+10. Mengupdate dokument dalam koleksi:
+
+    ```
+    db.nama_koleksi.updateOne(filter, update)
+    ```
+
+    Mengupdate satu dokument yang cocok dengan filter yang ditentukan dalam koleksi dengan nama yang ditentukan.
+
+    ```
+    db.nama_koleksi.updateMany(filter, update)
+    ```
+
+    Mengupdate beberapa dokument yang cocok dengan filter yang ditentukan dalam koleksi dengan nama yang ditentukan.
+
+11. Menghapus dokument dari koleksi:
+
+    ```
+    db.nama_koleksi.deleteOne(filter)
+    ```
+
+    Menghapus satu dokument yang cocok dengan filter yang ditentukan dari koleksi dengan nama yang ditentukan.
+
+    ```
+    db.nama_koleksi.deleteMany(filter)
+    ```
+
+    Menghapus beberapa dokument yang cocok dengan filter yang ditentukan dari koleksi dengan nama yang ditentukan.
+
+12. Mencari dokument dalam koleksi berdasarkan kriteria:
+
+    ```
+    db.nama_koleksi.find(filter)
+    ```
+
+    Mencari dan menampilkan dokument yang cocok dengan filter yang ditentukan dalam koleksi dengan nama yang ditentukan.
+
+13. Menampilkan dokument dengan kriteria pengurutan:
+    ```
+    db.nama_koleksi.find().sort({ kunci_pengurutan: nilai_pengurutan })
+    ```
+    Menampilkan dokument dalam koleksi dengan nama yang ditentukan, diurutkan berdasarkan kunci_pengurutan dengan nilai_pengurutan tertentu.
