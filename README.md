@@ -1,5 +1,9 @@
 # Belajar MongoDB
 
+Merupakan mata kuliah basis data lanjut semester 4 di Universitas Yudharta Pasuruan. Repo ini berisi tentang dokumentasi belajar MongoDB saya selama menempuh semester 4.
+
+## Tentang MongoDB
+
 **MongoDB** adalah salah satu database NoSQL yang paling populer. MongoDB adalah database yang berorientasi pada dokumen. Dokumen dalam MongoDB mirip dengan objek JSON. MongoDB menyimpan data dalam bentuk dokumen dan koleksi. Dokumen adalah sekumpulan field dan value. Koleksi adalah sekumpulan dokumen. Setiap dokumen dalam koleksi dapat memiliki struktur yang berbeda. MongoDB menyimpan data dalam format BSON (Binary JSON). BSON adalah representasi biner dari JSON yang dapat digunakan untuk menyimpan dan mengambil data dengan cepat.
 
 ## Instalasi MongoDB
@@ -23,3 +27,17 @@ Instalasi MongoDB dapat dilakukan dengan mengikuti langkah-langkah berikut:
     - Tambahkan jalur direktori bin MongoDB (misalnya, "C:\Program Files\MongoDB\Server\4.4\bin") ke dalam nilai variabel "Path". Pastikan untuk menggunakan jalur yang sesuai dengan versi MongoDB yang Anda instal.
     - Klik "OK" untuk menyimpan perubahan.
 11. Untuk memastikan instalasi MongoDB berhasil, buka command prompt baru dan ketik perintah mongo. Jika MongoDB berhasil diinstal, Anda akan melihat prompt MongoDB dan dapat mulai menggunakan perintah-perintah MongoDB.
+
+## Menjalankan MongoDB
+
+Secara default, di windows akan muncul mongoDB Atlas dan mongoDB Compass. Untuk menjalankan MongoDB, Anda dapat menggunakan salah satu dari dua cara berikut:
+
+1. Melalui Command Prompt:
+   - Buka Command Prompt dengan cara menekan tombol Windows + R, ketik "cmd" dan tekan Enter.
+   - Ketik perintah `mongosh` dan tekan Enter. Ini akan menjalankan server MongoDB.
+   - Biarkan Command Prompt tetap terbuka untuk menjalankan server MongoDB.
+2. Menggunakan MongoDB Compass:
+   - Buka MongoDB Compass, yang biasanya telah diinstal bersamaan dengan MongoDB.
+   - Pada tampilan awal, Anda akan melihat opsi "Connect" atau "Connect to Host". Klik opsi tersebut.
+   - MongoDB Compass akan mencoba terhubung ke server MongoDB secara otomatis. Jika tidak berhasil, Anda dapat mengklik opsi "Fill in connection fields individually" dan memasukkan detail koneksi secara manual.
+   - Setelah terhubung, Anda akan dapat melihat dan mengelola database dan koleksi dalam antarmuka MongoDB Compass.
