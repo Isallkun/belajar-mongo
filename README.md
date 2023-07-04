@@ -1,6 +1,6 @@
 # Belajar MongoDB
 
-**MongoDB** adalah salah satu database NoSQL yang paling populer. MongoDB adalah database yang berorientasi pada dokumen. Dokumen dalam MongoDB mirip dengan objek JSON. MongoDB menyimpan data dalam bentuk dokumen dan koleksi. Dokumen adalah sekumpulan field dan value. Koleksi adalah sekumpulan dokumen. MongoDB menyimpan data dalam bentuk dokumen dan koleksi. Dokumen adalah sekumpulan field dan value. Koleksi adalah sekumpulan dokumen.
+**MongoDB** adalah salah satu database NoSQL yang paling populer. MongoDB adalah database yang berorientasi pada dokumen. Dokumen dalam MongoDB mirip dengan objek JSON. MongoDB menyimpan data dalam bentuk dokumen dan koleksi. Dokumen adalah sekumpulan field dan value. Koleksi adalah sekumpulan dokumen. Setiap dokumen dalam koleksi dapat memiliki struktur yang berbeda. MongoDB menyimpan data dalam format BSON (Binary JSON). BSON adalah representasi biner dari JSON yang dapat digunakan untuk menyimpan dan mengambil data dengan cepat.
 
 ## Instalasi MongoDB
 
